@@ -136,5 +136,7 @@ REST_FRAMEWORK = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React app URL
+    "http://localhost:3000", # React app URL
+    "http://your-ec2-public-ip",
+    "http://your-frontend-domain",
 ]
