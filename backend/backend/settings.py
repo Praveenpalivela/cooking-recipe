@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-qrdlo%xub07m)c-&6+9pinlp^d_wjj+iiq3cjx^bmk=ul^f^$_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.128.254.89', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['18.117.226.116', 'localhost', '127.0.0.1']  # Add your EC2 public IP address
 
 
 # Application definition
@@ -46,12 +45,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Add this line
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # Add this line
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -136,7 +135,7 @@ REST_FRAMEWORK = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React app URL
-    "http://3.128.254.89",
-    "http://cooking-recipe.s3-website.us-east-2.amazonaws.com",
+    "http://localhost:3000", # React app URL
+    "http://18.117.226.116",  # Your EC2 public IP
+    "http://cooking-recipe.s3-website.us-east-2.amazonaws.com",  # Your S3 frontend URL
 ]
