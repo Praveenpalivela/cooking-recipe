@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qrdlo%xub07m)c-&6+9pinlp^d_wjj+iiq3cjx^bmk=ul^f^$_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-ec2-public-ip', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['3.128.254.89', 'localhost', '127.0.0.1']
 
 
 
