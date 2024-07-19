@@ -136,7 +136,7 @@ REST_FRAMEWORK = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", # React app URL
-    "http://your-ec2-public-ip",
+    "http://localhost:3000",  # React app URL
+    "http://3.128.254.89",
     "http://cooking-recipe.s3-website.us-east-2.amazonaws.com",
 ]
