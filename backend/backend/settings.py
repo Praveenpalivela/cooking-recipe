@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qrdlo%xub07m)c-&6+9pinlp^d_wjj+iiq3cjx^bmk=ul^f^$_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.128.254.89', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['3.144.214.47', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -135,6 +135,6 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React app URL
-    "http://3.128.254.89",
+    "http://3.144.214.47",
     "http://cooking-recipe.s3-website.us-east-2.amazonaws.com",
 ]
