@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Replace with your EC2 public IP address and API path
-    fetch('http://18.117.226.116:8000/api/recipes/')
+    fetch('http://3.128.254.89:8000/api/recipes/')
       .then(response => response.json())
       .then(data => setRecipes(data))
       .catch(error => console.error('Error fetching recipes:', error));
